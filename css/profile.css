@@ -1,0 +1,274 @@
+.user label{
+    margin-bottom: 2vw;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#mission h1 {
+	font-size: 800%;
+	width: 50%;
+	height: 20%;
+	display: inherit;
+	justify-content: left;
+	align-items:baseline;
+	margin-bottom: 0;
+	cursor: default;
+	margin-left: auto;
+	margin-right: 20%;
+	margin-top: 0;
+	font-family: 'Times New Roman', Times, serif;
+	color: #ffffff;
+    padding-top: 20%;
+    text-shadow: 3px 3px 4px rgba(2, 54, 64, 0.8);
+}
+
+
+#mission-conatiner{
+	height: 50%;	
+}
+
+#first-backcolor{
+	background:none;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	right: 0;
+}
+
+/* .Start {
+        display: block;
+        margin: auto;
+        border: solid black;
+        border-radius: 20px; 
+        padding: 5px 10px;
+        background-image: linear-gradient(rgb(226, 171, 171),rgb(190, 190, 166));
+        color: #000000;
+        cursor: pointer;
+        transition: transform 0.2s;
+    } */
+
+.Next,.Skip{
+    border-radius: 20px;
+    border: solid white;
+    padding: 10px 20px;
+    background-image: linear-gradient(#158673,#536764,#ddf9f4);
+    color: #fff;
+    transition: transform 0.2s;
+}
+
+.Next:active , .Skip:active , .Start:active{
+    transform: scale(0.95);
+}
+
+
+
+
+
+.questions-form{
+    background-color: rgb(74, 55, 55);
+}
+
+.Personal, .userDetails{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 50%;
+    /* margin: auto; */
+}
+
+
+.name{
+    color: white;
+    /* background-image: linear-gradient(#81abd8,rgb(145, 145, 145),rgb(200, 123, 136)); */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius: inherit;
+    width: 50%;
+    display: inline-block;  
+}
+
+.Personal{
+    background-image: linear-gradient(#158673,#536764,#97bcb5,#3c887a);
+    color: white;
+    left: 100%;
+    width: 500px;
+    height: auto;
+    margin: 10%;
+    margin-top: 3px;
+    box-shadow: #000000;
+    
+}
+
+.Personal ,.name {
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid white;
+}   
+
+.details{
+    padding: 100px;
+    margin: auto;
+}
+
+.userDetails{
+    background-color: #dcd9d9;
+    border-radius: 10px;
+    border: #000000;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 25%;
+    right: 100%;
+    box-shadow: inset;
+    word-spacing: 10%;
+}
+
+#question{
+    padding: 20%;
+    display: inline;
+    color: #fff;
+}
+
+.topic{
+    text-align: left;
+}
+
+/* #otherQuestions{
+    cursor: pointer;
+    visibility: hidden;
+} */
+
+.progressContainer{
+    display: ruby-base;
+    justify-content: right;
+    margin-left: auto;
+    top: 120px;
+} 
+
+.progress{
+    width: 28%;
+    top: 115.5%;
+    display: flex;
+    justify-content: flex-end; /* Aligns the progress bar to the right */
+    margin-left: 980px; 
+    top: 120px;
+    margin-top: 1%;
+}
+
+.labProgress{
+    display: flex;
+    justify-content: right;
+    color: #ffffff;
+    text-align: center;
+    right: 17%;
+    position: relative; 
+    /* should check on this */
+    top: 100px;
+    margin-top: -30%;
+}
+
+.userDetails{
+    display: block;
+    width: 30%;
+     /* Adjusted width of the expanded details */
+    height:max-content;
+    position: absolute;
+    top: 120%;
+    right: 5.5%;
+    bottom: 0;
+    background-color: #c0c0c0; /* Adjusted background color of the expanded details */
+}
+
+
+
+/* PopupMessage */
+.popupContainer{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1  );
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transform: transform 0.01s,top 0.01s;
+    z-index: 1000;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%)scale(1);
+}
+
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #51b22e;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blurredOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Adjust the opacity as needed */
+    backdrop-filter: blur(8px); /* Applies the blur effect */
+    z-index: 999; /* Ensure it's on top of other elements */
+    display: none; /* Initially hidden */
+}
+
+.open-popup + .blurredOverlay {
+    display: block; /* Display when the popup is open */
+}

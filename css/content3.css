@@ -1,0 +1,316 @@
+.mainOverlay{
+   background-color: #fff;
+   opacity: 1;
+   width: max-content;
+   height: max-content;
+   z-index: 0;
+}
+#mission h2 {
+    text-align: center;
+	font-size: 600%;
+	text-shadow: 3px 3px 4px rgba(44, 44, 44, 0.8);
+   color: #ffffff;
+	font-family: 'Times New Roman', Times, serif;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    cursor: default;
+    padding-top: 20%;
+    
+}
+
+p{
+   font-size: 150%;
+}
+
+h2{
+   font-size: 350%;
+}
+
+#mission-conatiner{
+	height: 50%;	
+}
+
+#first-backcolor{
+	background:none;
+	width: 100vw;
+	height: 100vh;
+	top:0;
+	right: 0;
+}
+
+.articles{
+    padding: 100px;
+}
+
+#nav2{
+    background-color: rgb(109,109, 109);
+    display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+	 padding: 5px;
+    border-radius: 10px;
+    font-size: large;
+    position: sticky;
+    top: 18%;
+    z-index: 99;
+    border: solid #14e3ce;
+   
+}
+ #nav2 ul {
+    /* color: #000; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+
+ }
+
+ #nav2 ul li{
+    display: inline;
+    margin-right: 10px;
+    padding-bottom: 0%;
+ }
+
+ #nav2 ul li a , #nav2 ul li button{
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: large;
+ }
+
+ #nav2 ul li a:hover {
+    background-color: #333;
+    color: #14e3ce;
+  }
+
+/* Dropdown starts */
+  .Subtopics {
+   visibility: hidden;
+   opacity: 0;
+   position: absolute;
+   left: -1.7vw;
+   width: 10vw;
+   background-color: #f9f9f951;
+   min-width: 120px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   border-radius: 20px;
+   transition: visibility 0.3s, opacity 0.3s;
+}
+
+/* Links inside the dropdown */
+.Subtopics a {
+   float: none;
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.Subtopics a:hover {
+   background-color: #1d0101;
+}
+
+/* Show the dropdown menu on hover */
+.subdrop:hover .Subtopics {
+   visibility: visible;
+   opacity: 1;
+}
+
+  .section{
+    margin-bottom: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity: 1;   
+    /* margin: auto; */
+
+  }
+
+  .section h2{
+    color: #333;
+    size: 600%;
+  }
+
+  .section:hover{
+    background-color: #f4f4f4;
+    transform: scale(1.05);
+  }
+
+
+  
+
+ #intro{
+    background-color: azure;
+    /* margin: auto; */
+    text-align: justify; 
+     
+ }
+
+
+ #understand{
+   
+    background-color: #ffffff;
+ }
+
+ #energy{
+    background-color: #97d1b6;
+    color: #333;
+    padding: 60px;
+ }
+ 
+ #transport{
+    background-color: #108977;
+    color: #fff;
+    padding: 60px;
+ }
+ #practices{
+    background-color: #0e5150;
+    color: #fff;
+    padding: 60px;
+    
+ }
+ #practices h2{
+   color: gray;
+ }
+ #carbon{
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 60px;
+ }
+ #conclusion{
+    background-color: cornsilk;
+    padding: 60px;
+ }
+
+
+ .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #666;
+  }
+
+  #energy img{
+   max-width: 320px;
+   float: left;
+   margin-right: 2%;
+   border-radius: 10px;
+  }
+  .container {
+   position: relative;
+   width: 80%;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px; 
+   margin-left: 10%;
+   
+ }
+
+ .container .box {
+   width: calc(33.33% - 10px); 
+   overflow: hidden;
+   position: relative;
+ }
+
+ .container .box img {
+   width: 100%;
+   height: auto;
+   transition: transform 0.5s;
+ }
+
+ .container .box:hover img {
+   transform: translateX(20%);
+ }
+
+ .container .content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-60%, -50%);
+   width: 90%;
+   height: auto;
+   background: rgba(10, 74, 54, 0.563);
+   color: #fff;
+   padding: 20px;
+   box-sizing: border-box;
+   opacity: 0;
+   transition: opacity 0.5s;
+   pointer-events: none;
+   
+   
+ }
+
+ .container .box:hover .content {
+   opacity: 1;
+   pointer-events: auto;
+   border-radius: 20px;
+   font-size: 9px;
+ }
+
+ /* transportation section */
+  #transport img{
+   float: left;
+   margin-right: 2%;
+   max-width: 320px;
+   border-radius: 10px;
+  }
+  
+  #practices img{
+   float: left;
+   margin-right: 2%;
+   margin: 2%;
+   max-width: 320px;
+   border-radius: 10px;
+  }
+
+  #carbon img{
+   float: left;
+   margin-right: 2%;
+   margin: 2%;
+   max-width: 320px;
+   border-radius: 10px;
+  }
+
+
+
+
+/* Dropdown button */
+
+.subtopics{
+    display: none;
+}
+.drpbtn2 {
+    background-color: rgb(109, 109, 109); /* Blue background color */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+  }
+  
+  /* Change background color of dropdown button on hover */
+  .drpbtn2:hover {
+    background-color: #333; /* Darker blue on hover */
+    color: #ffffff;
+  }
+
+  .drpbtn2:hover.subdrop{
+    display: block;
+  }
+  

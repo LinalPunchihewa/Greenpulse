@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | GREENPULSE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" href="./images/splash/logo_noBG_noName.png">
+</head>
+<body>
+    <header class="sticky header">
+        <div id="logo">
+            <img id="logo-left" src="images/splash/logo_noBG_noName.png" alt="website logo">
+            <img id="logo-right" src="images/splash/logo_nameOnly.png" alt="website name">
+        </div>
+        <nav>
+            <ul id="navbar">
+              <li><a href="home.html">Home</a></li>
+              <li><div class="dropdown">
+                <button class="dropbtn">Articles</button>
+                <div class="dropdown-content">
+                  <a href="content1.html">Article 1</a>
+                  <a href="content2.html">Article 2</a>
+                  <a href="content3.html">Article 3</a>
+                  <a href="content4.html">Article 4</a>
+                </div>
+              </div></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="profile.html">User Profile</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+              <li><a href="team.html">Team</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-heading-container">
+        <h1>Shop</h1>
+        <p id="shop-description">
+            Explore eco-friendly essentials at our shop, where sustainability meets convenience. Our curated selection of products supports climate action and sustainable living, offering everything you need to reduce waste and embrace a greener lifestyle. Join us in creating a cleaner, more sustainable future today. 
+        </p>
+    </div>>
+
+    <div class="shopping-cart-container">
+        <div id="shop-header">
+            <h1></h1>
+            <div class="shopping">
+                <img src="./images/shop/cart-icon-white.svg" alt="shopping cart icon">
+                <span class="quantity">0</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shop-items">
+        <!-- Category 1 -->
+        <div class="shop-category">
+            <h2 class="cateogry-title">
+                Eco Kitchen Essentials
+            </h2>
+            <div class="category-items">
+                <!-- Item 1 -->
+                <div class="item">
+                    <img src="./images/shop/metal-straws.jpg" alt="Stainless Steel straws">
+                    <div class="item-name">Stainless steel straw set</div>
+                    <div class="item-desc">
+                        Reusable stainless steel straw set with 3 drinking straws, cleaning tool, and carrying case.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 1200.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Straw Engraving Choice: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="No Pattern">No Pattern</option>
+                                <option value="Wind Pattern">Wind Pattern</option>
+                                <option value="Water Pattern">Water Pattern</option>
+                                <option value="Fire Pattern">Fire Pattern</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="item">
+                    <img src="./images/shop/cutting-board.jpg" alt="Bamboo cutting board">
+                    <div class="item-name">Bamboo cutting board</div>
+                    <div class="item-desc">
+                        Sustainably sourced natural bamboo cutting boards available in a variety of sizes to fit your needs.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 800.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Board size
+                            <select name="customize-select" class="customize-select">
+                                <option value="Small (14'')">Small (14'')</option>
+                                <option value="Medium (18'')">Medium (18'')</option>
+                                <option value="Large (22'')">Large (22'')</option>
+                                <option value="X-Large (25'')">X-Large (25'')</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="item">
+                    <img src="./images/shop/storage-container.jpeg" alt="Stainless Steel straws">
+                    <div class="item-name">Reusable container set</div>
+                    <div class="item-desc">
+                        Dishwasher and microwave safe food storage containers to replace disposable plastic containers. Available in a variety of colors. 
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 1600.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Lid color: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Transparent">Transparent</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Green">Green</option>
+                                <option value="Red">Red</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Category 2 -->
+        <div class="shop-category">
+            <h2 class="cateogry-title">
+                Outdoor products
+            </h2>
+            <div class="category-items">
+                <!-- Item 1 -->
+                <div class="item">
+                    <img src="./images/shop/solar-stove.jpg" alt="Solar powered camping stove">
+                    <div class="item-name">Solar stove</div>
+                    <div class="item-desc">
+                        Cook sustainably with our solar powered camping stove. Harness the power of the sun to prepare meals while reducing carbon emissions.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 3500.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Cooking top 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Grill">Grill</option>
+                                <option value="Flat top">Flat top</option>
+                                <option value="Hot plate">Hot plate</option>
+                                <option value="Combo">Combo</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="item">
+                    <img src="./images/shop/garbage-bags.jpg" alt="Biodegradable Camping Garbage Bags">
+                    <div class="item-name">Biodegradable garbage bags</div>
+                    <div class="item-desc">
+                        Plant-based camping bags! Clean campsite, happy planet. Biodegradable & break down naturally.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 500.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Size
+                            <select name="customize-select" class="customize-select">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="X-Large">X-Large</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="item">
+                    <img src="./images/shop/bug-repellent.jpg" alt="Natural bug repellent">
+                    <div class="item-name">Natural bug repellent</div>
+                    <div class="item-desc">
+                        Plant-powered protection! Our organic bug repellent fends off insects naturally and protects the planet.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 300.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Scent: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Unscented">Unscented</option>
+                                <option value="Mint">Mint</option>
+                                <option value="Eucalyptus">Eucalyptus</option>
+                                <option value="Lemon">Lemon</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="shop-category">
+            <h2 class="category-title">
+                Gardening Essentials
+            </h2>
+            <div class="category-items">
+                <!-- Item 1-->
+                <div class="item">
+                    <img src="./images/shop/gardening-tool-set.jpg" alt="Gardening Tool Set">
+                    <div class="item-name">Gardening Tool Set</div>
+                    <div class="item-desc">
+                        Equip yourself with essential gardening tools for a successful gardening experience. Includes shovels, trowels, rakes, and more.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 1200.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Material: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Steel">Steel</option>
+                                <option value="Wood">Wood</option>
+                                <option value="Plastic">Plastic</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 2-->
+                <div class="item">
+                    <img src="./images/shop/compost-bin.jpg" alt="Compost Bin">
+                    <div class="item-name">Compost Bin</div>
+                    <div class="item-desc">
+                        Start composting and reduce waste with our durable and spacious compost bin. Perfect for organic waste recycling.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 800.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Capacity: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 3-->
+                <div class="item">
+                    <img src="./images/shop/plant-pots.jpg" alt="Plant Pots">
+                    <div class="item-name">Plant Pots</div>
+                    <div class="item-desc">
+                        Grow your favorite plants with our eco-friendly plant pots. Made from recycled materials, they're perfect for indoor and outdoor gardening.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 500.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Color: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Terracotta">Terracotta</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="shop-category">
+            <h2 class="category-title">
+                Apparel
+            </h2>
+            <div class="category-items">
+                <!-- Item 1 -->
+                <div class="item">
+                    <img src="./images/shop/climate-action-tshirt.jpg" alt="Climate Action T-Shirt">
+                    <div class="item-name">Climate Action T-Shirt</div>
+                    <div class="item-desc">
+                        Spread awareness and show your support for climate action with our comfortable and stylish t-shirt made from organic cotton.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 600.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Size: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="X-Large">X-Large</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 2-->
+                <div class="item">
+                    <img src="./images/shop/sdgs-flag.jpg" alt="SDGs Flag">
+                    <div class="item-name">SDGs Flag</div>
+                    <div class="item-desc">
+                        Display your commitment to the Sustainable Development Goals (SDGs) with our high-quality flag featuring the SDGs logo.
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 400.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Size: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+                
+                <!-- Item 3-->
+                <div class="item">
+                    <img src="./images/shop/climate-action-wristband.jpg" alt="Climate Action Wristband">
+                    <div class="item-name">Climate Action Wristband</div>
+                    <div class="item-desc">
+                        Show your dedication to climate action with our silicone wristband featuring the climate action symbol. Wear it proudly every day!
+                    </div>
+                    <div class="inline">
+                        <div class="item-price">Rs. 150.00</div>
+                        <div class="item-quantity">
+                            <label>Quantity: 
+                                <input class="quantity" type="number" name="quantity" value="1" min="1" max="20">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="item-customizer">
+                        <label>Color: 
+                            <select name="customize-select" class="customize-select">
+                                <option value="Green">Green</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Pink">Pink</option>
+                            </select>
+                        </label>
+                    </div>
+                    <button onclick="addToCart(this)">Add to cart</button>
+                </div>
+            </div>
+        </div>      
+    </div> 
+
+
+  
+    <!-- Cart information -->
+    <div class="cart">
+        <h1>Your Cart</h1>
+        <ul class="cartList">
+            <li>
+                <div class="cart-header">Item name</div>
+                <div class="cart-header">Nett price</div>
+                <div class="cart-header">Qty</div>
+            </li>
+        </ul>
+        <div class="checkout">
+            <div id="checkoutBtn" onclick="toCheckout()">
+                <p class="totalPrice">Total: 0</p>
+                <p class="proceedText">Proceed to checkout</p>
+            </div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Checkout Screen -->
+    <div class="checkout-screen">
+        <h1 id="checkout-title"><i class="fa fa-shopping-cart"></i> Checkout</h1>
+        <form id="checkout-form" action="mailto:danuja.20230856@iit.ac.lk?subject=GREENPULSE%20shop%20order" method="post" enctype="text/plain">
+
+            <h2 class="checkout-heading">Personal Details</h2>
+            <div class="checkout-section">
+                <div class="checkout-item">
+                    <label for="fullName">
+                        <i class="fa fa-user"></i> Full Name
+                    </label>
+                    <input type="text" name="fullName" id="fullName" required>
+                    <div id="fullName-error" class="error-message"></div>
+                </div>
+                <div class="checkout-item">
+                    <label for="email">
+                        <i class="fa fa-envelope"></i> Email
+                    </label>
+                    <input type="email" name="email" id="email" required>
+                    <div id="email-error" class="error-message"></div>
+                </div>
+                <div class="checkout-item">
+                    <label for="address">
+                        <i class="fa fa-map-marker"></i> Delivery Address
+                    </label>
+                    <input type="text" name="address" id="address" required>
+                </div>
+                <div class="checkout-item">
+                    <label for="contactNo">
+                        <i class="fa fa-mobile"></i> Contact Number
+                    </label>
+                    <input type="tel" name="contactNo" id="contactNo" required>
+                    <div id="contactNo-error" class="error-message"></div>
+                </div>
+            </div>
+
+            <h2 class="checkout-heading">Payment Details</h2>
+            <div class="checkout-section">
+                <div class="checkout-item">
+                    <label for="cardName">
+                        <i class="fa fa-credit-card"></i> Name on card
+                    </label>
+                    <input type="text" name="cardName" id="cardName" required>
+                    <div id="cardName-error" class="error-message"></div>
+                </div>
+                <div class="checkout-item">
+                    <label for="cardNumber">
+                        <i class="fa fa-credit-card"></i> Credit card number
+                    </label>
+                    <input type="text" name="cardNumber" id="cardNumber" required>
+                    <div id="cardNumber-error" class="error-message"></div>
+                </div>
+                <div class="checkout-item">
+                    <label for="expire">
+                        <i class="fa fa-credit-card"></i> Expiration
+                    </label>
+                    <input type="text" name="expire" id="expire" required>
+                    <div id="expire-error" class="error-message"></div>
+                </div>
+                <div class="checkout-item">
+                    <label for="cvv">
+                        <i class="fa fa-credit-card"></i> CVV
+                    </label>
+                    <input type="number" name="cvv" id="cvv" required>
+                    <div id="cvv-error" class="error-message"></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="submit-button">Complete Checkout</button>
+                <button id="reset-button" type="reset">Reset checkout details</button>
+                <button id="return-button" onclick="leaveCheckout()">Return to shop</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+        <div class="row editor-link">
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            GREENPULSE Copyright © 2024 GREENPULSE - All rights reserved || Designed By: <a id="editor-link" href="danuja.html">Danuja Weerasekara</a>
+        </div>
+    </div>
+    </footer>
+    <script src="js/template.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>
