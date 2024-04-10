@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback | GREENPULSE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link href="css/template.css" rel="stylesheet">
+  <link rel="icon" href="./images/splash/logo_noBG_noName.png">
+</head>
+<body>
+    <div id="backcolor"></div>
+  <header class="sticky header">
+    <div id="logo">
+        <img id="logo-left" src="images/splash/logo_noBG_noName.png" alt="website logo">
+        <img id="logo-right" src="images/splash/logo_nameOnly.png" alt="website name">
+    </div>
+    <nav>
+      <ul id="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Articles</button>
+          <div class="dropdown-content">
+            <a href="content1.html">Article 1</a>
+            <a href="content2.html">Article 2</a>
+            <a href="content3.html">Article 3</a>
+            <a href="content4.html">Article 4</a>
+          </div>
+        </div></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="profile.html">User Profile</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+        <li><a href="team.html">Team</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <div id="mission-container">
+    <div id="mission">
+      <h1 class="missiontitle">Feedback</h1>
+    </div>
+
+  </div>
+  
+  <div class="container">
+    <form id="form" method="post" action="mailto:linux.min.ac@gmail.com" enctype="text/plain">
+        <h1>Feedback</h1>
+
+
+        <div class="input-control">
+            <label for="username">Name</label>
+            <input id="username" name="username" type="text">
+            <div id="nameError" class="error"></div>
+        </div>
+
+
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div id="mailError" class="error"></div>
+        </div><br>
+
+        <div class="container">
+          <label >Was this is your first time visiting ?</label><br>
+          <label class="labelradio">
+            <input type="radio" name="visiting_time" class="yes" value="yes" required> Yes
+        </label><br>
+        <label class="labelradio">
+          <input type="radio" name="visiting_time" class="No" value="No" required> No
+      </label>
+          
+        </div><br>
+        
+
+
+        <div class="container">
+          <label >Was the website innovative and user-friendly ?</label><br>
+          <label class="labelradio">
+            <input type="radio" name="is_it" class="yes" value="yes" required> Yes
+        </label><br>
+        <label class="labelradio">
+            <input type="radio" name="is_it" class="No" value="No" required> No
+        </label>
+        <br>
+        <br>
+        <textarea id="reason" name="reason" placeholder="Please provide a reason (required if 'No' is selected)" rows="4" cols="50"></textarea>
+        <div class="error-message" id="reasonError">Please provide a reason.</div>
+        </div>
+        <br>
+        
+        <br>
+        
+        <div class="wrapper">
+          <h3>Rate Your Satisfaction</h3>
+          
+            <div class="rating">
+              <input type="number" name="rating" hidden>
+              <i class='bx bx-star star' style="--i: 0;"></i>
+              <i class='bx bx-star star' style="--i: 1;"></i>
+              <i class='bx bx-star star' style="--i: 2;"></i>
+              <i class='bx bx-star star' style="--i: 3;"></i>
+              <i class='bx bx-star star' style="--i: 4;"></i>
+              <i class='bx bx-star star' style="--i: 5;"></i>
+              <i class='bx bx-star star' style="--i: 6;"></i>
+              <i class='bx bx-star star' style="--i: 7;"></i>
+              <i class='bx bx-star star' style="--i: 8;"></i>
+              <i class='bx bx-star star' style="--i: 9;"></i>
+            </div>
+            <div class="container">
+              <label >Would you reccomend our website ?</label><br>
+              <label class="labelradio">
+                <input type="radio" name="recomend_this" class="yes" value="yes" required> Yes
+            </label><br>
+            <label class="labelradio">
+              <input type="radio" name="recomend_this" class="No" value="No" required> No
+          </label>
+              
+            </div><br>
+            <textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+            
+          
+        </div><br>
+
+        <div>
+          <label for="Via">Receive updates and offers about the website ?</label><br>
+          <select name="Via" id="Via">
+            <option value="via Email">via Email</option>
+            <option value="via SMS">via SMS</option>
+            <option value="via WhatsApp">via WhatsApp</option>
+            <option value="via post">via Post</option>
+            <option value="via Call">via Call</option>
+          </select>
+        </div><br>
+        <br>
+        <div class="btn-group">
+          <button type="submit" class="btn submit">Submit</button>
+          <button class="btn cancel" type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<footer>
+<div class="footer">
+<div class="row">
+
+<a href="#"><i class="fa fa-arrow-up"></i></a>
+
+</div>
+
+<div class="row editor-link">
+<ul>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="shop.html">Shop</a></li>
+  <li><a href="profile.html">User Profile</a></li>
+  <li><a href="feedback.html">Feedback</a></li>
+  <li><a href="team.html">Team</a></li>
+</ul>
+</div>
+
+<div class="row">
+GREENPULSE Copyright © 2024 GREENPULSE - All rights reserved || Designed By: <a href="linal.html">Linal Punchihewa</a> 
+</div>
+</div>
+</footer>
+
+
+
+
+
+ 
+  
+<script src="js/feedback.js"></script>
+<script src="js/template.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="css/profile.css">
+        <link rel="icon" href="./images/splash/logo_noBG_noName.png">
+    </head>
+    <body>
+        <header class="sticky header">
+            <div id="logo">
+                <img id="logo-left" src="images/splash/logo_noBG_noName.png" alt="website logo">
+                <img id="logo-right" src="images/splash/logo_nameOnly.png" alt="website name">
+            </div>
+            <nav>
+                <ul id="navbar">
+                  <li><a href="home.html">Home</a></li>
+                  <li><div class="dropdown">
+                    <button class="dropbtn">Articles</button>
+                    <div class="dropdown-content">
+                      <a href="content1.html">Article 1</a>
+                      <a href="content2.html">Article 2</a>
+                      <a href="content3.html">Article 3</a>
+                      <a href="content4.html">Article 4</a>
+                    </div>
+                  </div></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="profile.html">User Profile</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+                  <li><a href="sitemap.html">Sitemap</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  
+                </ul>
+              </nav>
+        </header>
+
+
+        
+            <div id="first-backcolor" >
+
+                <div id="mission-container">
+                    <div id="mission">
+                        <h1 class="missiontitle">User Profile</h1>
+                    </div>
+
+                </div>
+            </div>
+
+
+        <div class="mainContainer" id="mainContainer">
+
+            <div class="intro">
+                <div class="userProfile">
+                    <!-- <label class="user">Build user profile</label> -->
+                
+                    <br><br>
+            </div>
+
+            
+            
+            
+            <div id="currentQuestion" class="mainDiv div1">
+                    <div class="Personal">
+                        <div class="topic">
+                            <label>STEP 1 Personal details | Question <span id="count-1">1</span>/4</label>
+                        </div>
+                        <br>
+                        
+                        <div class="name">
+                            
+                            <label for="name" id="question1" >Your name</label><br>
+                            <input type="text" name="name" id="user-input1">
+                        </div>
+                        <br><br>
+                        <button class="Next" id="next-btn1">Next</button>
+                        <button class="Skip" id="skip-btn1">Skip</button>
+                    </div>
+
+                    <br>
+            
+                    
+                </div>
+            </div>
+            <div class="userDetails" id="profile-container1"></div>  
+
+            <div id="otherQuestions2" class="mainDiv div2" style="display: none;">
+                <div class="userProfile">
+                    
+                    <br><br>
+                    
+                    <div class="Personal">
+                        <div class="topic">
+                            <label>STEP 2 Volunteering tasks | Question <span id="count-2">1</span>/5</label>
+                        </div>
+                        <br>
+                        
+                        <div class="name">
+                            
+                            <label for="name" id="question2" >Your name</label><br>
+                            <input type="text" name="name" id="user-input2">
+                        </div>
+                        <br><br>
+                        <button class="Next" id="next-btn2">Next</button>
+                        <button class="Skip" id="skip-btn2" onclick="skipQuestion()">Skip</button>
+                    </div>
+
+                    <br>
+
+                </div>
+            </div>
+            
+            <div id="otherQuestions3" class="mainDiv div3" style="display: none;" >
+                <div class="userProfile">
+                    
+                    <br><br>
+                    
+                    <div class="Personal">
+                        <div class="topic">
+                            <label>STEP 3 Personal details | Question <span id="count-3">1</span>/4</label>
+                        </div>
+                        <br>
+                        
+                        <div class="name">
+                            
+                            <label for="name" id="question3" >Your name</label><br>
+                            <input type="text" name="name" id="user-input3">
+                        </div>
+                        <br><br>
+                        <button class="Next" id="next-btn3">Next</button>
+                        <button class="Skip" id="skip-btn3" onclick="skipQuestion()">Skip</button>
+                    </div>
+
+                    <br>
+
+
+                </div>
+            </div>
+
+                
+
+            <div id="otherQuestions" class="mainDiv div4" style="display: none;">
+                <div class="userProfile">
+                    
+                    <br><br>
+                    
+                    <div class="Personal">
+                        <div class="topic">
+                            <label>STEP 4 Personal details | Question <span id="count-4">1</span>/4</label>
+                        </div>
+                        <br>
+                        
+                        <div class="name">
+                            
+                            <label for="name" id="question4" >Your name</label><br>
+                            <input type="text" name="name" id="user-input4">
+                        </div>
+                        <br><br>
+                        <button class="Next" id="next-btn4">Next</button>
+                        <button class="Skip" id="skip-btn4" onclick="skipQuestion()">Skip</button>
+                    </div>
+
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+            <div class="Answers">
+                    <div class="progressContainer">
+                        <label class="labProgress" id="labProgress">Profile Completed 0%</label><br><br>
+                        <progress class="progress" id="progressBar" value="0" max="100"></progress>
+                    </div>
+                </div>        
+
+        </div>   
+
+        <div class="popupContainer">
+            <div class="popup" id="popup">
+                <img src="images/profile/tick.png" alt="tick mark">
+                <h2>Thank you!!</h2>
+                <p>Your details have been successfully submitted. <br>Click OK for returning to the homepage </p>
+                <button type="button" onclick="closePop()">OK</button>
+            </div>
+        </div>
+
+        <div class="blurredOverlay" id="blurredOverlay"></div>
+            
+
+
+        <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+        <div class="row editor-link">
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+        GREENPULSE Copyright © 2024 GREENPULSE - All rights reserved || Designed By: <a id="editor-link" href="nethu.html">Nethu Hettihewa</a> 
+        </div>
+        </div>
+        </footer>
+        <script src="js/template.js"></script>
+        <script src="js/profile.js"></script>
+    </body>
+</html>  
